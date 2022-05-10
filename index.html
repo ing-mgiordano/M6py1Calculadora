@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Arcaica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Arcaica</h1>
+    </header>
+
+    <section id="content">
+        <fieldset>
+            <legend>Ingrese un numero</legend>
+            <input type="number" id="input-num1" placeholder="Numero 1">
+        </fieldset>
+
+        <fieldset>
+            <legend>Ingrese un numero</legend>
+            <input type="number" id="input-num2" placeholder="Numero 2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Elija una operacion matematica (+ - * / %)</legend>
+            <select id="Opciones">
+                <<option enabled="seleccion">Seleccione</option>
+                    <option value="Suma">Suma</option>
+                    <option value="Resta">Resta</option>
+                    <option value="Multiplicacion">Multiplicacion</option>
+                    <option value="Division">Division</option>
+                    <option value="Modulo">Modulo</option>
+            </select>
+        </fieldset>
+
+        <p id="resultado"></p>
+
+        <button onclick="calculateResult()">Calcular</button>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
